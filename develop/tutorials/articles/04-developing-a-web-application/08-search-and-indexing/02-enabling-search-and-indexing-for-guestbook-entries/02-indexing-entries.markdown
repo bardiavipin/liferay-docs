@@ -156,10 +156,10 @@ Then create the implementation class, `EntryBatchReindexerImpl`:
         indexerWriter.getBatchIndexingActionable();
 
             batchIndexingActionable.setAddCriteriaMethod(dynamicQuery -> {
-                Property guestbookIdPropery = PropertyFactoryUtil.forName(
+                Property guestbookIdProperty = PropertyFactoryUtil.forName(
         "guestbookId");
 
-                dynamicQuery.add(guestbookIdPropery.eq(guestbookId));
+                dynamicQuery.add(guestbookIdProperty.eq(guestbookId));
             });
 
             batchIndexingActionable.setCompanyId(companyId);
